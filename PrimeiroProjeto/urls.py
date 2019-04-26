@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from meuSite import views #Tudo que tiver dentro de views ele vai mostrar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index), #dentro da views chamar função
+    path('sobre/', views.sobre), #sobre/ é o endereço no site !!!SEMPRE POR VIRGULA!!!
 ]
