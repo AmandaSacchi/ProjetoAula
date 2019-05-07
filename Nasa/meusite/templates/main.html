@@ -1,0 +1,20 @@
+{% load staticfiles %} <!-- Carregar arquivos da pasta static -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}"> <!-- Puxa o arquivo da pasta static -->
+    <title>Index</title>
+</head>
+<body>
+    {% block content %}
+    <!-- Conteúdo virá aqui no meio -->
+    <!-- Sempre nesse espaço ele vai receber os outros conteúdos -->
+
+    {% endblock %}
+</body>
+</html> 

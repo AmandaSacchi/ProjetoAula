@@ -1,0 +1,15 @@
+.vscode
+
+# ambiente virtual não sobe
+myenv/
+
+# arquivos cache || DLL files
+__pycache__
+
+# pack da distribuição
+.Python
+
+# mypy
+.mypy_cache/
+
+db.sqlite3
